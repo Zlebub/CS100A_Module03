@@ -30,8 +30,20 @@ for p in team:
 if 'Xavier' in team:
     print("I can't wait to play")
 else:
-    print("Put me in coach, I'm ready to play.")'''
-# Grocery
+    print("Put me in coach, I'm ready to play.")
+# Tuples
+team=[('Rowan', 2, 'pg'), 
+    ('Garrett', 10, 'sg'), 
+    ('JT', 11, 'c'), 
+    ('Miguel', 14, 'pf'), 
+    ('Liam', 20, 'sf')
+]
+
+for player in team:
+    # break out the parts for each player
+    (name, number, position) = player
+    print('starting at ' + position + ', number ' + str(number) + ', ' + name)
+# Grocery'''
 glist = []
 gitem = ''
 while gitem != 'done':

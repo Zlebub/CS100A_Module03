@@ -45,6 +45,7 @@ for player in team:
     print('starting at ' + position + ', number ' + str(number) + ', ' + name)
 # Grocery'''
 glist = []
+gtotal = []
 gitem = ''
 while gitem != 'done':
     gitem = input('Enter a grocery item, or enter done to finish: ')
@@ -55,4 +56,10 @@ while len(glist) != 0:
     gitem = input('What have you gotten? ')
     if gitem in glist:
         glist.pop(gitem)
-print('You have successfully gotten your list! ')
+    gcost = input('Whats the price? ')
+    gquan = input('How many? ')
+    greceipt = (gitem, gcost, gquan)
+    gtotal.append(greceipt)
+print('You have successfully gotten your groceries! Heres what you got: ')
+print(gtotal)
+

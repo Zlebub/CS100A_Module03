@@ -32,3 +32,15 @@ if 'Xavier' in team:
 else:
     print("Put me in coach, I'm ready to play.")'''
 # Grocery
+glist = []
+gitem = ''
+while gitem != 'done':
+    gitem = input('Enter a grocery item, or enter done to finish: ')
+    if gitem != 'done':
+        glist.append(gitem)
+print('Time to buy your groceries! ')
+while len(glist) != 0:
+    gitem = input('What have you gotten? ')
+    if gitem in glist:
+        glist.pop(gitem)
+print('You have successfully gotten your list! ')

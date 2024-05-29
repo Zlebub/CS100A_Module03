@@ -98,3 +98,5 @@ while i <= 10:
         ures=int(input('Please enter the answer: '))
     equstore.append(equ, fans, ans)
     i = i + 1
+print('Alright, lets see what problems you had, what you first answered, and whether that was correct or not.')
+print(equstore)

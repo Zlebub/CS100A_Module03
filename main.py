@@ -91,9 +91,10 @@ while i <= 10:
     genequ()
     ures=int(input('Please enter the answer: '))
     ans = 'True'
+    fans = ures
     while ures != res:
         print('Sorry, try again')
         ans = 'False'
         ures=int(input('Please enter the answer: '))
-    equstore.append(equ, ans)
+    equstore.append(equ, fans, ans)
     i = i + 1

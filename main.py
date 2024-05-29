@@ -43,7 +43,7 @@ for player in team:
     # break out the parts for each player
     (name, number, position) = player
     print('starting at ' + position + ', number ' + str(number) + ', ' + name)
-# Grocery'''
+# Grocery
 glist = []
 gtotal = []
 gitem = ''
@@ -62,4 +62,38 @@ while len(glist) != 0:
     gtotal.append(greceipt)
 print('You have successfully gotten your groceries! Heres what you got: ')
 print(gtotal)
-
+'''
+# base for math tutoring system
+import random as rand
+equstore = []
+def genequ():   # a frankly terrible way to choose which mathematical operation to use
+    global res
+    global equ
+    num1 = rand.randint(1, 20)
+    num2 = rand.randint(1, 20)
+    equsym = rand.randint(1, 4)
+    if equsym == 1:
+        equ = print(f'What is {num1} + {num2}')
+        res = (num1+num2)
+    elif equsym == 2:
+        equ = print(f'What is {num1} - {num2}')
+        res = (num1-num2)
+    elif equsym == 3:
+        equ = print(f'What is {num1} * {num2}')
+        res = (num1*num2)
+    elif equsym == 4:
+        equ = print(f'What is {num1} / {num2}')
+        res = (num1/num2)
+       
+i = 1
+mname=input('What is your name? ')  # the actual program start
+while i <= 10:
+    genequ()
+    ures=int(input('Please enter the answer: '))
+    ans = 'True'
+    while ures != res:
+        print('Sorry, try again')
+        ans = 'False'
+        ures=int(input('Please enter the answer: '))
+    equstore.append(equ, ans)
+    i = i + 1
